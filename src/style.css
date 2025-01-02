@@ -59,18 +59,18 @@ main strong {
   display: flex;
 }
 .weather-icon {
-  font-size: 35px;
-  margin-top: 22px;
+  width: 80px;
+  height: 80px;
 }
 .weather-temperature-value {
   font-size: 80px;
   font-weight: bold;
-  margin-left: 3px;
+  margin-left: 5px;
 }
 .weather-unit {
   font-size: 32px;
-  margin-top: 12px;
-  margin-left: 3px;
+  margin-top: 14px;
+  margin-left: 1px;
 }
 footer {
   color: rgba(39, 33, 66, 0.7);
