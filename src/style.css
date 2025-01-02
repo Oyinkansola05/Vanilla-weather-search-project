@@ -61,16 +61,15 @@ main strong {
 .weather-icon {
   width: 80px;
   height: 80px;
+  margin-top: 5px;
 }
 .weather-temperature-value {
   font-size: 80px;
   font-weight: bold;
-  margin-left: 5px;
 }
 .weather-unit {
   font-size: 32px;
   margin-top: 14px;
-  margin-left: 1px;
 }
 footer {
   color: rgba(39, 33, 66, 0.7);

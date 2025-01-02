@@ -15,6 +15,8 @@ function displayCurrentTemperature(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 }
 function formatDate(date) {
   let hours = date.getHours();
@@ -29,12 +31,15 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
   let apiKey = "10f93091ao9cdtf74b038641f13d04bd";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayCurrentTemperature);
 }
 function displayCity(event) {
