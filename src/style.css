@@ -45,7 +45,10 @@ main {
   display: flex;
   justify-content: space-between;
 }
-main strong {
+#humidity {
+  color: #dc143c;
+}
+#wind-speed {
   color: #dc143c;
 }
 .weather-info {
@@ -71,6 +74,30 @@ main strong {
 .weather-unit {
   font-size: 32px;
   margin-top: 14px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.5);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  font-size: 35px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #dc143c;
+}
+.weather-forecast-temp {
+  padding: 0 10px;
 }
 footer {
   border-top: 1px solid #f9f7fe;
