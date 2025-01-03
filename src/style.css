@@ -39,10 +39,11 @@ h1 {
   font-size: 38px;
 }
 main {
+  padding: 20px 0;
+}
+.weather-data {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #f9f7fe;
-  padding: 20px 0;
 }
 main strong {
   color: #dc143c;
@@ -72,6 +73,7 @@ main strong {
   margin-top: 14px;
 }
 footer {
+  border-top: 1px solid #f9f7fe;
   color: rgba(39, 33, 66, 0.7);
   padding-top: 30px;
   font-size: 13px;
